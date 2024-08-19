@@ -18,24 +18,21 @@ This repository contains my personal Neovim configuration, designed to be minima
 ## Supported Languages
 
 - Python
-- C++
-- C
-- JavaScript
-- React
+- C/C++
+- JavaScript / React / Typescript
 - CSS
 - HTML
 - Markdown
 - Lua
-- TypeScript
 - JSON
-- TSX
 
 ## Prerequisites
 
-- Neovim (>= 0.5.0)
-- Git
-- Node.js and npm (for certain language servers)
-- A C compiler (like gcc or clang, for Treesitter)
+- `neovim` (>= 0.5.0)
+- `git`
+- `node`
+- `ripgrep`
+- Nerd font of your choice
 
 ## Installation
 
@@ -48,7 +45,7 @@ This repository contains my personal Neovim configuration, designed to be minima
 2. Clone this repository:
 
    ```
-   git clone git@github.com:YOUR_USERNAME/nvim-config.git ~/.config/nvim
+   git clone git@github.com:dan10ish/dotfiles.git ~/.config/nvim
    ```
 
 3. Install Packer (plugin manager):
@@ -69,7 +66,7 @@ This repository contains my personal Neovim configuration, designed to be minima
    - For Python: `npm install -g pyright`
    - For JavaScript/TypeScript: `npm install -g typescript typescript-language-server`
    - For HTML/CSS: `npm install -g vscode-langservers-extracted`
-   - For C/C++: Install `clangd` using your system's package manager
+   - For C/C++: Install `clangd` using your system's package manager, in mac - `brew install llvm`
 
 6. Install Treesitter parsers:
    ```
@@ -96,11 +93,6 @@ To add support for a new language:
    ```
    :TSInstall your_new_language
    ```
-4. Update this README to include the new language in the "Supported Languages" section.
-
-## Customization
-
-Feel free to modify `init.lua` to suit your needs. The configuration is designed to be minimal and easy to understand, making it a great starting point for your own customizations.
 
 ## Contributing
 
